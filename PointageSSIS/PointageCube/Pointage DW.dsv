@@ -1,0 +1,177 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4d69ff4a-d23f-44fb-9719-9f7077a41b46" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Pointage DW</ID>
+  <Name>Pointage DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Pointage DW</DataSourceID>
+  <Schema>
+    <xs:schema id="Pointage_x0020_DW" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Pointage_x0020_DW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="adb7e798-e2f6-40c7-90e2-024837c655d5">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_FAIT_Pointage" msprop:design-time-name="8478861c-5c1d-4dbb-8734-101bf7e7e158" msprop:DbTableName="FAIT_Pointage" msprop:FriendlyName="FAIT_Pointage" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="PK_Pointage" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="42c6fba4-6166-4b52-be34-974656d99c6e" msprop:DbColumnName="PK_Pointage" msprop:FriendlyName="PK_Pointage" type="xs:int" />
+                  <xs:element name="PK_Temps" msprop:design-time-name="1b3cea6e-1a70-480b-b916-87b618160fa5" msprop:DbColumnName="PK_Temps" msprop:FriendlyName="PK_Temps" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="PK_Employe" msprop:design-time-name="34fe4c73-8b17-45e3-8bf0-48fc9e5b608a" msprop:DbColumnName="PK_Employe" msprop:FriendlyName="PK_Employe" type="xs:int" minOccurs="0" />
+                  <xs:element name="PK_Service" msprop:design-time-name="0909451b-b8ce-4bc2-9725-b26250af29a2" msprop:DbColumnName="PK_Service" msprop:FriendlyName="PK_Service" type="xs:int" minOccurs="0" />
+                  <xs:element name="NombreRetards" msprop:design-time-name="ed2b383f-adf8-4268-a83c-726699cb5b4e" msprop:DbColumnName="NombreRetards" msprop:FriendlyName="NombreRetards" type="xs:int" minOccurs="0" />
+                  <xs:element name="CumulRetards" msprop:design-time-name="73151032-1a88-49e2-a7a1-77a48cb53452" msprop:DbColumnName="CumulRetards" msprop:FriendlyName="CumulRetards" type="xs:int" minOccurs="0" />
+                  <xs:element name="DateLoad" msprop:design-time-name="e204cb8b-b619-437c-a571-f7c194454478" msprop:DbColumnName="DateLoad" msprop:FriendlyName="DateLoad" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_Service" msprop:design-time-name="af162bc7-93a1-4b18-82c7-ab199cd9cdeb" msprop:DbTableName="DIM_Service" msprop:FriendlyName="DIM_Service" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="PK_Service" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="67e1ad74-e5ee-4bcb-a872-cbee4403c849" msprop:DbColumnName="PK_Service" msprop:FriendlyName="PK_Service" type="xs:int" />
+                  <xs:element name="IdService" msprop:design-time-name="8dd00ff2-a4ad-49cd-b044-c84edd39d67a" msprop:DbColumnName="IdService" msprop:FriendlyName="IdService" type="xs:int" minOccurs="0" />
+                  <xs:element name="NomService" msprop:design-time-name="84c98b06-e290-4f9d-a349-c67b7adc2ecb" msprop:DbColumnName="NomService" msprop:FriendlyName="NomService" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DateLoad" msprop:design-time-name="4820eb7d-7794-4b44-8d37-3efc2b6647cb" msprop:DbColumnName="DateLoad" msprop:FriendlyName="DateLoad" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_Employe" msprop:design-time-name="c9c57787-0636-486b-ae02-f2b6a2bc3089" msprop:DbTableName="DIM_Employe" msprop:FriendlyName="DIM_Employe" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="PK_Employe" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="a8b5f8e7-b24d-4900-8cc5-8aa9b642faa6" msprop:DbColumnName="PK_Employe" msprop:FriendlyName="PK_Employe" type="xs:int" />
+                  <xs:element name="IdEmploye" msprop:design-time-name="8a1b7cc8-2bf8-4f2f-a7cc-1ca3921aa70e" msprop:DbColumnName="IdEmploye" msprop:FriendlyName="IdEmploye" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Fonction" msprop:design-time-name="73d0ee7a-7e30-4f75-98bc-7c136ae5ecea" msprop:DbColumnName="Fonction" msprop:FriendlyName="Fonction" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DateDebut" msprop:design-time-name="d4b11a65-3c8e-45b6-bf66-1a11e2b0085d" msprop:DbColumnName="DateDebut" msprop:FriendlyName="DateDebut" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="DateFin" msprop:design-time-name="d5aef30b-2c27-428b-93be-30d1954ff819" msprop:DbColumnName="DateFin" msprop:FriendlyName="DateFin" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Nom" msprop:design-time-name="74b86256-9649-4c3b-815e-807d24a4805a" msprop:DbColumnName="Nom" msprop:FriendlyName="Nom" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Prenom" msprop:design-time-name="ae627f95-fc44-44cf-9cf2-7f171ed84e78" msprop:DbColumnName="Prenom" msprop:FriendlyName="Prenom" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Sexe" msprop:design-time-name="ff88dff8-b5c7-466f-8c2c-4245ff8ad150" msprop:DbColumnName="Sexe" msprop:FriendlyName="Sexe" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="DateNaissance" msprop:design-time-name="237a690c-47f4-4a89-80bb-0e8f55955ebe" msprop:DbColumnName="DateNaissance" msprop:FriendlyName="DateNaissance" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="DateLoad" msprop:design-time-name="840306ff-6ac8-4e12-88d5-bed60cc02c2b" msprop:DbColumnName="DateLoad" msprop:FriendlyName="DateLoad" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_Temps" msprop:design-time-name="1a51e970-1806-414c-8478-be49aaf73342" msprop:DbTableName="DIM_Temps" msprop:FriendlyName="DIM_Temps" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="PK_Temps" msprop:design-time-name="35010b26-57d2-4dff-8f81-31435135562a" msprop:DbColumnName="PK_Temps" msprop:FriendlyName="PK_Temps" type="xs:dateTime" />
+                  <xs:element name="Annee" msprop:design-time-name="c686b85b-96d3-412a-a92b-d267b1b2c771" msprop:DbColumnName="Annee" msprop:FriendlyName="Annee" type="xs:int" minOccurs="0" />
+                  <xs:element name="Mois" msprop:design-time-name="1a8cac73-f37c-40ff-abe9-d947fd99df5d" msprop:DbColumnName="Mois" msprop:FriendlyName="Mois" type="xs:int" minOccurs="0" />
+                  <xs:element name="Jour" msprop:design-time-name="a7a32dba-b0a9-40c0-8b76-4801aafc56fe" msprop:DbColumnName="Jour" msprop:FriendlyName="Jour" type="xs:int" minOccurs="0" />
+                  <xs:element name="NomMois" msprop:design-time-name="f03a22d4-53a3-46f2-a4a8-4da085ac1222" msprop:DbColumnName="NomMois" msprop:FriendlyName="NomMois" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NomJour" msprop:design-time-name="8af387f0-e0b5-481e-880a-7b36b19006f5" msprop:DbColumnName="NomJour" msprop:FriendlyName="NomJour" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EstFerie" msprop:design-time-name="d467a46d-5e9c-4a78-9be9-05ab45ce6f4c" msprop:DbColumnName="EstFerie" msprop:FriendlyName="EstFerie" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="EstOuvrable" msprop:design-time-name="d15e0e4a-69ea-4b69-b675-2adb90eca7dd" msprop:DbColumnName="EstOuvrable" msprop:FriendlyName="EstOuvrable" type="xs:boolean" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FAIT_Pointage" />
+          <xs:field xpath="PK_Pointage" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_Service_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_Service" />
+          <xs:field xpath="PK_Service" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_Employe_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_Employe" />
+          <xs:field xpath="PK_Employe" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_Temps_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_Temps" />
+          <xs:field xpath="PK_Temps" />
+        </xs:unique>
+        <xs:keyref name="FK_Pointage_Temps" refer="dbo_DIM_Temps_Constraint1">
+          <xs:selector xpath=".//dbo_FAIT_Pointage" />
+          <xs:field xpath="PK_Temps" />
+        </xs:keyref>
+        <xs:keyref name="FK_Pointage_Employe" refer="dbo_DIM_Employe_Constraint1">
+          <xs:selector xpath=".//dbo_FAIT_Pointage" />
+          <xs:field xpath="PK_Employe" />
+        </xs:keyref>
+        <xs:keyref name="FK_Pointage_Service" refer="dbo_DIM_Service_Constraint1">
+          <xs:selector xpath=".//dbo_FAIT_Pointage" />
+          <xs:field xpath="PK_Service" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Pointage_x0020_DW xmlns="" />
+  </Schema>
+</DataSourceView>
